@@ -160,7 +160,7 @@ for line in open("../chatgpt_background_pubmed_100.jsonl", "r"):
     each = json.loads(line)
     background[each["question_id"]] = each["background"]
 
-contriever_question =open("/Users/wenbingbing/PycharmProjects/qasper-led-baseline/pubmed/contriever/pubmed_contriever.jsonl")
+contriever_question =open("/pubmed/contriever/pubmed_contriever.jsonl")
 contriever_question_dict = {}
 for each in contriever_question:
     each = json.loads(each)
