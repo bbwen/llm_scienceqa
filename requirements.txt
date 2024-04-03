@@ -1,0 +1,17 @@
+absl-py
+accelerate
+bert-score
+bitsandbytes
+datasets
+evaluate
+huggingface_hub
+numpy
+openai
+peft
+rouge-score
+scikit-learn
+scipy
+torch
+transformers
+trl
+vllm
