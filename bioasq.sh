@@ -6,8 +6,7 @@ python run_eval.py \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
     --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
 
 
 python run_eval.py \
@@ -18,8 +17,7 @@ python run_eval.py \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
     --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --no_context
 
 python run_eval.py \
@@ -30,8 +28,7 @@ python run_eval.py \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
     --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --random
 
 python run_eval.py \
@@ -42,8 +39,7 @@ python run_eval.py \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
     --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --random \
     --double
 
@@ -56,8 +52,7 @@ python run_eval.py \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
     --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
 
 
 python run_eval.py \
@@ -68,8 +63,7 @@ python run_eval.py \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
     --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --no_context \
 
 python run_eval.py \
@@ -80,8 +74,7 @@ python run_eval.py \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
     --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --random
 
 python run_eval.py \
@@ -92,8 +85,7 @@ python run_eval.py \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
     --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --random \
     --double
 
@@ -106,8 +98,7 @@ python run_eval.py \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
     --tokenizer_name_or_path lmsys/vicuna-13b-v1.5  \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
 
 
 python run_eval.py \
@@ -118,8 +109,7 @@ python run_eval.py \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
     --tokenizer_name_or_path lmsys/vicuna-13b-v1.5 \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --no_context \
 
 python run_eval.py \
@@ -130,8 +120,7 @@ python run_eval.py \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
     --tokenizer_name_or_path lmsys/vicuna-13b-v1.5 \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --random
 
 python run_eval.py \
@@ -142,8 +131,7 @@ python run_eval.py \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
     --tokenizer_name_or_path lmsys/vicuna-13b-v1.5  \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --random \
     --double
 
@@ -156,8 +144,7 @@ python run_eval.py \
     --model_name_or_path lmsys/vicuna-13b-v1.5  \
     --tokenizer_name_or_path lmsys/vicuna-13b-v1.5 \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
 
 python run_eval.py \
     --dataset bioasq \
@@ -167,8 +154,7 @@ python run_eval.py \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
     --tokenizer_name_or_path lmsys/vicuna-13b-v1.5 \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --no_context \
 
 python run_eval.py \
@@ -179,8 +165,7 @@ python run_eval.py \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
     --tokenizer_name_or_path lmsys/vicuna-13b-v1.5  \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --random
 
 python run_eval.py \
@@ -191,8 +176,7 @@ python run_eval.py \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
     --tokenizer_name_or_path lmsys/vicuna-13b-v1.5 \
     --use_chat_format \
-    --eval_batch_size 1 \
-    --use_vllm \
+    --eval_batch_size 4 \
     --random \
     --double
 
