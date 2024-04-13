@@ -1,6 +1,6 @@
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
@@ -11,7 +11,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
@@ -22,7 +22,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
@@ -33,7 +33,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
@@ -46,7 +46,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
@@ -57,7 +57,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
@@ -68,7 +68,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
@@ -79,7 +79,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
@@ -92,7 +92,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
@@ -103,7 +103,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
@@ -114,7 +114,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
@@ -125,7 +125,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
@@ -138,7 +138,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path lmsys/vicuna-13b-v1.5  \
@@ -148,7 +148,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
@@ -159,7 +159,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
@@ -170,7 +170,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path lmsys/vicuna-13b-v1.5 \
@@ -184,7 +184,7 @@ python run_eval.py \
 ####flan
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path google/flan-t5-xl \
@@ -196,7 +196,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path google/flan-t5-xl \
@@ -208,7 +208,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path google/flan-t5-xl \
@@ -219,7 +219,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key sota \
     --save_dir  ./results \
     --model_name_or_path google/flan-t5-xl \
@@ -232,7 +232,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path google/flan-t5-xl  \
@@ -242,7 +242,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path google/flan-t5-xl \
@@ -253,7 +253,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path google/flan-t5-xl \
@@ -264,7 +264,7 @@ python run_eval.py \
 
 python run_eval.py \
     --dataset bioasq \
-    --dataset_path test.json \
+    --dataset_dir  ./data/bioasq/ \
     --prompt_key freeform \
     --save_dir  ./results \
     --model_name_or_path google/flan-t5-xl \
