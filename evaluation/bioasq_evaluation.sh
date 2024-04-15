@@ -63,9 +63,9 @@ python3 evaluation/bioasq_evaluation.py \
 
 echo "no context sota gpt"
  python3 evaluation/bioasq_evaluation.py \
- --predictions  results/bioasq_gpt-3.5-turbo_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
- --predictions_after results/bioasq_gpt-3.5-turbo_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
- --comp_file  compare/bioasq/bioasq_gpt-3.5-turbo_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl
+ --predictions  results/bioasq_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+ --predictions_after results/bioasq_gpt-3.5-turbo-0613_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
+ --comp_file  compare/bioasq/bioasq_gpt-3.5-turbo-0613_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl
 ##
 ##
 #140
@@ -133,9 +133,9 @@ python3 evaluation/bioasq_evaluation.py \
 #echo "random context sota gpt"
 
 python3 evaluation/bioasq_evaluation.py \
---predictions results/bioasq_gpt-3.5-turbo_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
---predictions_after results/bioasq_gpt-3.5-turbo_0_sota_results_nocontextFalse_randomTrue_doubleFalse.jsonl \
---comp_file compare/bioasq/bioasq_gpt-3.5-turbo_0_sota_results_nocontextFalse_randomTrue_doubleFalse_comp.jsonl
+--predictions results/bioasq_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+--predictions_after results/bioasq_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleFalse.jsonl \
+--comp_file compare/bioasq/bioasq_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleFalse_comp.jsonl
 ##
 
 
@@ -191,9 +191,9 @@ echo "double random context sota flan"
 
 echo "double random context sota gpt"
  python3 evaluation/bioasq_evaluation.py \
- --predictions results/bioasq_gpt-3.5-turbo_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
- --predictions_after results/bioasq_gpt-3.5-turbo_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
- --comp_file results/bioasq_gpt-3.5-turbo_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl
+ --predictions results/bioasq_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+ --predictions_after results/bioasq_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
+ --comp_file results/bioasq_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl
 
 #140
 #all 0.000000
@@ -256,9 +256,9 @@ echo "double random context sota gpt"
 
 
 # python3 bioasq_evaluation.py \
-# --predictions /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/bioasq_gpt-3.5-turbo_0_freeform_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
-# --predictions_after /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/bioasq_gpt-3.5-turbo_0_freeform_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
-# --comp_file /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/bioasq_gpt-3.5-turbo_0_freeform_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl
+# --predictions /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/bioasq_gpt-3.5-turbo-0613_0_freeform_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+# --predictions_after /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/bioasq_gpt-3.5-turbo-0613_0_freeform_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
+# --comp_file /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/bioasq_gpt-3.5-turbo-0613_0_freeform_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl
 ###
 #130
 #all 0.000000

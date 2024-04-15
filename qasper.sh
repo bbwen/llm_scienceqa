@@ -202,50 +202,50 @@ export CUDA_VISIBLE_DEVICES=0
 
 #vicuan
 
-python run_eval.py \
-    --dataset qasper \
-    --dataset_dir ./data/qasper/ \
-    --prompt_key sota \
-    --save_dir  ./results/qasper \
-    --model_name_or_path lmsys/vicuna-13b-v1.5 \
-    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5  \
-    --use_chat_format \
-    --eval_batch_size 8 \
-    --random \
-    --double
-
-python run_eval.py \
-    --dataset qasper \
-    --dataset_dir ./data/qasper/ \
-    --prompt_key sota \
-    --save_dir  ./results/qasper \
-    --model_name_or_path lmsys/vicuna-13b-v1.5 \
-    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5  \
-    --use_chat_format \
-    --eval_batch_size 8 \
+#python run_eval.py \
+#    --dataset qasper \
+#    --dataset_dir ./data/qasper/ \
+#    --prompt_key sota \
+#    --save_dir  ./results/qasper \
+#    --model_name_or_path lmsys/vicuna-13b-v1.5 \
+#    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5  \
+#    --use_chat_format \
+#    --eval_batch_size 8 \
+#    --random \
+#    --double
 #
-
-python run_eval.py \
-    --dataset qasper \
-    --dataset_dir ./data/qasper/ \
-    --prompt_key sota \
-    --save_dir  ./results/qasper \
-    --model_name_or_path lmsys/vicuna-13b-v1.5 \
-    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5 \
-    --use_chat_format \
-    --eval_batch_size 8 \
-    --no_context \
-
-python run_eval.py \
-    --dataset qasper \
-    --dataset_dir ./data/qasper/ \
-    --prompt_key sota \
-    --save_dir  ./results/qasper \
-    --model_name_or_path lmsys/vicuna-13b-v1.5 \
-    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5 \
-    --use_chat_format \
-    --eval_batch_size 8 \
-    --random
+#python run_eval.py \
+#    --dataset qasper \
+#    --dataset_dir ./data/qasper/ \
+#    --prompt_key sota \
+#    --save_dir  ./results/qasper \
+#    --model_name_or_path lmsys/vicuna-13b-v1.5 \
+#    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5  \
+#    --use_chat_format \
+#    --eval_batch_size 8 \
+##
+#
+#python run_eval.py \
+#    --dataset qasper \
+#    --dataset_dir ./data/qasper/ \
+#    --prompt_key sota \
+#    --save_dir  ./results/qasper \
+#    --model_name_or_path lmsys/vicuna-13b-v1.5 \
+#    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5 \
+#    --use_chat_format \
+#    --eval_batch_size 8 \
+#    --no_context \
+#
+#python run_eval.py \
+#    --dataset qasper \
+#    --dataset_dir ./data/qasper/ \
+#    --prompt_key sota \
+#    --save_dir  ./results/qasper \
+#    --model_name_or_path lmsys/vicuna-13b-v1.5 \
+#    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5 \
+#    --use_chat_format \
+#    --eval_batch_size 8 \
+#    --random
 
 
 
@@ -294,3 +294,50 @@ python run_eval.py \
 #    --eval_batch_size 2 \
 #    --random \
 #    --double
+
+
+###gpt3.5
+python run_eval.py \
+    --dataset qasper \
+    --dataset_dir ./data/qasper/ \
+    --prompt_key sota \
+    --save_dir  ./results/qasper \
+    --model_name_or_path lmsys/vicuna-13b-v1.5 \
+    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5  \
+    --use_chat_format \
+    --eval_batch_size 8 \
+    --random \
+    --double
+
+python run_eval.py \
+    --dataset qasper \
+    --dataset_dir ./data/qasper/ \
+    --prompt_key sota \
+    --save_dir  ./results/qasper \
+    --model_name_or_path lmsys/vicuna-13b-v1.5 \
+    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5  \
+    --use_chat_format \
+    --eval_batch_size 8 \
+#
+
+python run_eval.py \
+    --dataset qasper \
+    --dataset_dir ./data/qasper/ \
+    --prompt_key sota \
+    --save_dir  ./results/qasper \
+    --model_name_or_path lmsys/vicuna-13b-v1.5 \
+    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5 \
+    --use_chat_format \
+    --eval_batch_size 8 \
+    --no_context \
+
+python run_eval.py \
+    --dataset qasper \
+    --dataset_dir ./data/qasper/ \
+    --prompt_key sota \
+    --save_dir  ./results/qasper \
+    --model_name_or_path lmsys/vicuna-13b-v1.5 \
+    --tokenizer_name_or_path lmsys/vicuna-13b-v1.5 \
+    --use_chat_format \
+    --eval_batch_size 8 \
+    --random
