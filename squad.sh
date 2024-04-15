@@ -11,6 +11,8 @@ python run_eval.py \
     --tokenizer_name_or_path google/flan-t5-xl  \
     --use_chat_format \
     --eval_batch_size 8 \
+    --flan_model \
+
 
 python run_eval.py \
     --dataset squad2 \
@@ -21,7 +23,9 @@ python run_eval.py \
     --use_chat_format \
     --eval_batch_size 8 \
     --random \
-    --double
+    --double \
+    --flan_model \
+
 
 
 python run_eval.py \
@@ -33,6 +37,7 @@ python run_eval.py \
     --use_chat_format \
     --eval_batch_size 8 \
     --no_context \
+    --flan_model \
 
 python run_eval.py \
     --dataset squad2 \
@@ -42,7 +47,8 @@ python run_eval.py \
     --tokenizer_name_or_path google/flan-t5-xl  \
     --use_chat_format \
     --eval_batch_size 8 \
-    --random
+    --random \
+    --flan_model \
 
 
 
