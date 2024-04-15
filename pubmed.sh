@@ -1,5 +1,99 @@
 export CUDA_VISIBLE_DEVICES=1
 
+#flanxl
+python run_eval.py \
+    --dataset pubmedqa \
+    --dataset_dir ./data/pubmedqa/ \
+    --prompt_key sota \
+    --save_dir  ./results/pubmedqa \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl  \
+    --use_chat_format \
+    --eval_batch_size 1 \
+
+
+python run_eval.py \
+    --dataset pubmedqa \
+    --dataset_dir ./data/pubmedqa/ \
+    --prompt_key sota \
+    --save_dir  ./results/pubmedqa \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl  \
+    --use_chat_format \
+    --eval_batch_size 1 \
+    --random \
+    --double
+
+python run_eval.py \
+    --dataset pubmedqa \
+    --dataset_dir ./data/pubmedqa/ \
+    --prompt_key sota \
+    --save_dir  ./results/pubmedqa \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl \
+    --use_chat_format \
+    --eval_batch_size 1 \
+    --no_context \
+
+python run_eval.py \
+    --dataset pubmedqa \
+    --dataset_dir ./data/pubmedqa/ \
+    --prompt_key sota \
+    --save_dir  ./results/pubmedqa \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl \
+    --use_chat_format \
+    --eval_batch_size 1 \
+    --random
+
+
+python run_eval.py \
+    --dataset pubmedqa \
+    --dataset_dir ./data/pubmedqa/ \
+    --prompt_key freeform \
+    --save_dir  ./results/pubmedqa \
+    --model_name_or_path google/flan-t5-xl  \
+    --tokenizer_name_or_path google/flan-t5-xl \
+    --use_chat_format \
+    --eval_batch_size 1 \
+
+
+python run_eval.py \
+    --dataset pubmedqa \
+    --dataset_dir ./data/pubmedqa/ \
+    --prompt_key freeform \
+    --save_dir  ./results/pubmedqa \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl \
+    --use_chat_format \
+    --eval_batch_size 1 \
+    --no_context \
+
+python run_eval.py \
+    --dataset pubmedqa \
+    --dataset_dir ./data/pubmedqa/ \
+    --prompt_key freeform \
+    --save_dir  ./results/pubmedqa \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl  \
+    --use_chat_format \
+    --eval_batch_size 1 \
+    --random
+
+python run_eval.py \
+    --dataset pubmedqa \
+    --dataset_dir ./data/pubmedqa/ \
+    --prompt_key freeform \
+    --save_dir  ./results/pubmedqa \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl \
+    --use_chat_format \
+    --eval_batch_size 1 \
+    --random \
+    --double
+
+
+
 #llama
 python run_eval.py \
     --dataset pubmedqa \
@@ -186,97 +280,6 @@ python run_eval.py \
     --double
 
 
-#flanxl
-python run_eval.py \
-    --dataset pubmedqa \
-    --dataset_dir ./data/pubmedqa/ \
-    --prompt_key sota \
-    --save_dir  ./results/pubmedqa \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl  \
-    --use_chat_format \
-    --eval_batch_size 1 \
-
-
-python run_eval.py \
-    --dataset pubmedqa \
-    --dataset_dir ./data/pubmedqa/ \
-    --prompt_key sota \
-    --save_dir  ./results/pubmedqa \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --use_chat_format \
-    --eval_batch_size 1 \
-    --no_context \
-
-python run_eval.py \
-    --dataset pubmedqa \
-    --dataset_dir ./data/pubmedqa/ \
-    --prompt_key sota \
-    --save_dir  ./results/pubmedqa \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --use_chat_format \
-    --eval_batch_size 1 \
-    --random
-
-python run_eval.py \
-    --dataset pubmedqa \
-    --dataset_dir ./data/pubmedqa/ \
-    --prompt_key sota \
-    --save_dir  ./results/pubmedqa \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl  \
-    --use_chat_format \
-    --eval_batch_size 1 \
-    --random \
-    --double
-
-
-python run_eval.py \
-    --dataset pubmedqa \
-    --dataset_dir ./data/pubmedqa/ \
-    --prompt_key freeform \
-    --save_dir  ./results/pubmedqa \
-    --model_name_or_path google/flan-t5-xl  \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --use_chat_format \
-    --eval_batch_size 1 \
-
-
-python run_eval.py \
-    --dataset pubmedqa \
-    --dataset_dir ./data/pubmedqa/ \
-    --prompt_key freeform \
-    --save_dir  ./results/pubmedqa \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --use_chat_format \
-    --eval_batch_size 1 \
-    --no_context \
-
-python run_eval.py \
-    --dataset pubmedqa \
-    --dataset_dir ./data/pubmedqa/ \
-    --prompt_key freeform \
-    --save_dir  ./results/pubmedqa \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl  \
-    --use_chat_format \
-    --eval_batch_size 1 \
-    --random
-
-python run_eval.py \
-    --dataset pubmedqa \
-    --dataset_dir ./data/pubmedqa/ \
-    --prompt_key freeform \
-    --save_dir  ./results/pubmedqa \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --use_chat_format \
-    --eval_batch_size 1 \
-    --random \
-    --double
 
 
 #python3 run_eval.py \

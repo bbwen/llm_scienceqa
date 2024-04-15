@@ -12,6 +12,17 @@ python run_eval.py \
     --use_chat_format \
     --eval_batch_size 8 \
 
+python run_eval.py \
+    --dataset squad2 \
+    --prompt_key sota \
+    --save_dir  ./results/squad \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl  \
+    --use_chat_format \
+    --eval_batch_size 8 \
+    --random \
+    --double
+
 
 python run_eval.py \
     --dataset squad2 \
@@ -33,16 +44,7 @@ python run_eval.py \
     --eval_batch_size 8 \
     --random
 
-python run_eval.py \
-    --dataset squad2 \
-    --prompt_key sota \
-    --save_dir  ./results/squad \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl  \
-    --use_chat_format \
-    --eval_batch_size 8 \
-    --random \
-    --double
+
 
 
 

@@ -12,8 +12,6 @@ python run_eval.py \
     --eval_batch_size 8 \
     --flan_model \
 
-
-
 python run_eval.py \
     --dataset bioasq \
     --dataset_dir  ./data/bioasq/ \

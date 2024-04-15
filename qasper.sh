@@ -1,40 +1,40 @@
 export CUDA_VISIBLE_DEVICES=0
 
 #flan
-python run_eval.py \
-    --dataset qasper \
-    --dataset_dir ./data/qasper/ \
-    --prompt_key sota \
-    --save_dir  ./results/qasper \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl  \
-    --eval_batch_size 8 \
-    --flan_model
-
-
-
-python run_eval.py \
-    --dataset qasper \
-    --dataset_dir ./data/qasper/ \
-    --prompt_key sota \
-    --save_dir  ./results/qasper \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --eval_batch_size 8 \
-    --no_context \
-    --flan_model
-
-
-python run_eval.py \
-    --dataset qasper \
-    --dataset_dir ./data/qasper/ \
-    --prompt_key sota \
-    --save_dir  ./results/qasper \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --eval_batch_size 8 \
-    --random \
-    --flan_model
+#python run_eval.py \
+#    --dataset qasper \
+#    --dataset_dir ./data/qasper/ \
+#    --prompt_key sota \
+#    --save_dir  ./results/qasper \
+#    --model_name_or_path google/flan-t5-xl \
+#    --tokenizer_name_or_path google/flan-t5-xl  \
+#    --eval_batch_size 8 \
+#    --flan_model
+#
+#
+#
+#python run_eval.py \
+#    --dataset qasper \
+#    --dataset_dir ./data/qasper/ \
+#    --prompt_key sota \
+#    --save_dir  ./results/qasper \
+#    --model_name_or_path google/flan-t5-xl \
+#    --tokenizer_name_or_path google/flan-t5-xl \
+#    --eval_batch_size 8 \
+#    --no_context \
+#    --flan_model
+#
+#
+#python run_eval.py \
+#    --dataset qasper \
+#    --dataset_dir ./data/qasper/ \
+#    --prompt_key sota \
+#    --save_dir  ./results/qasper \
+#    --model_name_or_path google/flan-t5-xl \
+#    --tokenizer_name_or_path google/flan-t5-xl \
+#    --eval_batch_size 8 \
+#    --random \
+#    --flan_model
 
 
 python run_eval.py \
