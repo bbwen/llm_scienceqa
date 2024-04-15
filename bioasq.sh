@@ -319,6 +319,7 @@ python3 run_eval.py \
     --save_dir  ./results \
     --openai_engine "gpt-3.5-turbo-0613" \
     --eval_batch_size 8 \
+    --max_context_length 3096 \
 
 
 python3 run_eval.py \
@@ -329,6 +330,7 @@ python3 run_eval.py \
     --openai_engine "gpt-3.5-turbo-0613" \
     --eval_batch_size 8 \
     --no_context \
+    --max_context_length 3096 \
 
 
 python3 run_eval.py \
@@ -339,6 +341,8 @@ python3 run_eval.py \
     --openai_engine "gpt-3.5-turbo-0613" \
     --eval_batch_size 8 \
     --random \
+    --max_context_length 3096 \
+
 
 
 python3 run_eval.py \
@@ -350,6 +354,8 @@ python3 run_eval.py \
     --eval_batch_size 8 \
     --random \
     --double \
+    --max_context_length 3096 \
+
 #
 #
 #
