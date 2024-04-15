@@ -40,7 +40,7 @@ python3 evaluation/bioasq_evaluation.py \
 echo "no context sota flan"
 python3 evaluation/bioasq_evaluation.py \
 --predictions ../results/bioasq/bioasq_flan-t5-xl_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
---predictions_after ../bioasq/bioasq_flan-t5-xl_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
+--predictions_after ../results/bioasq/bioasq_flan-t5-xl_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
 --comp_file ../compare/bioasq/bioasq_flan-t5-xl_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
 
 
