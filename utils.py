@@ -222,7 +222,7 @@ def load_hf_lm_and_tokenizer(
         flan_model=False,
         gptq_model=False,
         use_fast_tokenizer=True,
-        padding_side="right",
+        padding_side="left",
     ):
     
     from transformers import AutoModelForCausalLM, AutoTokenizer, OPTForCausalLM, GPTNeoXForCausalLM,AutoModelForSeq2SeqLM
