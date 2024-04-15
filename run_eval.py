@@ -244,7 +244,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--max_context_length",
         type=int,
-        default=2048,
+        default=1024,
         help="maximum number of tokens in the context passage."
     )
     parser.add_argument(

@@ -22,7 +22,7 @@ python run_eval.py \
     --model_name_or_path google/flan-t5-xl \
     --tokenizer_name_or_path google/flan-t5-xl  \
     --use_chat_format \
-    --eval_batch_size 8 \
+    --eval_batch_size 16 \
     --random \
     --double \
     --flan_model \
