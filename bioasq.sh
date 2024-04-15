@@ -104,56 +104,56 @@ export CUDA_VISIBLE_DEVICES=0
 
 #llama
 
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key sota \
-    --save_dir  ./results \
-    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
-    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
-    --use_chat_format \
-    --eval_batch_size 4 \
-    --random \
-    --double \
-    --max_context_length 2048 \
-
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key sota \
-    --save_dir  ./results \
-    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
-    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
-    --use_chat_format \
-    --eval_batch_size 4 \
-    --max_context_length 2048 \
-
-
-
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key sota \
-    --save_dir  ./results \
-    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
-    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf \
-    --use_chat_format \
-    --eval_batch_size 4 \
-    --no_context \
-    --max_context_length 2048 \
-
-
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key sota \
-    --save_dir  ./results \
-    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
-    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
-    --use_chat_format \
-    --eval_batch_size 4 \
-    --random \
-    --max_context_length 2048 \
+#python run_eval.py \
+#    --dataset bioasq \
+#    --dataset_dir  ./data/bioasq/ \
+#    --prompt_key sota \
+#    --save_dir  ./results \
+#    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
+#    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
+#    --use_chat_format \
+#    --eval_batch_size 2 \
+#    --random \
+#    --double \
+#    --max_context_length 3096 \
+#
+#python run_eval.py \
+#    --dataset bioasq \
+#    --dataset_dir  ./data/bioasq/ \
+#    --prompt_key sota \
+#    --save_dir  ./results \
+#    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
+#    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
+#    --use_chat_format \
+#    --eval_batch_size 4 \
+#    --max_context_length 2048 \
+#
+#
+#
+#python run_eval.py \
+#    --dataset bioasq \
+#    --dataset_dir  ./data/bioasq/ \
+#    --prompt_key sota \
+#    --save_dir  ./results \
+#    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
+#    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf \
+#    --use_chat_format \
+#    --eval_batch_size 4 \
+#    --no_context \
+#    --max_context_length 2048 \
+#
+#
+#python run_eval.py \
+#    --dataset bioasq \
+#    --dataset_dir  ./data/bioasq/ \
+#    --prompt_key sota \
+#    --save_dir  ./results \
+#    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
+#    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
+#    --use_chat_format \
+#    --eval_batch_size 4 \
+#    --random \
+#    --max_context_length 2048 \
 
 
 
