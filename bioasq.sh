@@ -1,3 +1,4 @@
+export CUDA_VISIBLE_DEVICES=0
 python run_eval.py \
     --dataset bioasq \
     --dataset_dir  ./data/bioasq/ \

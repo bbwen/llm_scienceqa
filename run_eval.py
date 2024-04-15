@@ -4,7 +4,7 @@ from os import path, mkdir, getenv
 import json
 import random
 import torch
-import vllm
+#import vllm
 from statistics import mean
 from huggingface_hub import login as hf_login
 import evaluate
@@ -63,7 +63,7 @@ def main(args):
 
 
     print("Loading data...")
-    data = load_data(args.dataset, args.dataset_path)
+    data = load_data(args.dataset, args.dataset_dir)
     print(len(data))
     test_data = []
     context_length_list = []
@@ -124,7 +124,7 @@ def main(args):
             tokenized_context = tokenizer.encode(example["context"])
             if len(tokenized_context) >0:
                 context_length_list.append(len(tokenized_context))
-                if len(tokenized_context) >1024:
+                if len(tokenized_context) >args.max_context_length:
                     truncated_list.append(len(tokenized_context))
             # if len(tokenized_context) > args.max_context_length:
             #     example["context"] = tokenizer.decode(tokenized_context[:args.max_context_length])
@@ -244,7 +244,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--max_context_length",
         type=int,
-        default=1024,
+        default=2048,
         help="maximum number of tokens in the context passage."
     )
     parser.add_argument(
