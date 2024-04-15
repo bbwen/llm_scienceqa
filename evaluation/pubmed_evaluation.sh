@@ -1,8 +1,8 @@
 echo "no context sota llama"
-python pubmed_evaluation.py  \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse_2.jsonl \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
+python evaluation/pubmed_evaluation.py  \
+results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse_2.jsonl \
+results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
+compare/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
 #500
 #19.0 88.0 87.0
 #all 0.388000
@@ -39,10 +39,10 @@ python pubmed_evaluation.py  \
 #nono 0.102
 
 echo "no context sota vicuna"
-python pubmed_evaluation.py  \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
+python evaluation/pubmed_evaluation.py  \
+results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
+compare/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
 
 #500
 #33.0 129.0 149.0
@@ -82,18 +82,18 @@ python pubmed_evaluation.py  \
 
 echo "no context sota flan"
 
-python3 pubmed_evaluation.py  \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl  \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl  \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
+python3 evaluation/pubmed_evaluation.py  \
+results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl  \
+results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl  \
+compare/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
 
 
 
 echo "no context sota gpt"
-python3 pubmed_evaluation.py  \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl  \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl  \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
+python3 evaluation/pubmed_evaluation.py  \
+results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl  \
+results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl  \
+compare/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
 
 #500
 #15.0 34.0 83.0
@@ -133,10 +133,10 @@ python3 pubmed_evaluation.py  \
 
 
 echo "random context sota llama"
-python3 pubmed_evaluation.py  \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse_2.jsonl \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleFalse.jsonl \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleFalse_comp.jsonl \
+python3 evaluation/pubmed_evaluation.py  \
+results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse_2.jsonl \
+results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleFalse.jsonl \
+compare/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleFalse_comp.jsonl \
 ##140
 #all 0.000000
 #Accuracy 0.985714
@@ -151,10 +151,10 @@ python3 pubmed_evaluation.py  \
 #nono 0.0
 
 echo "random context sota vicuna"
-python3 pubmed_evaluation.py \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleFalse.jsonl \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleFalse_comp.jsonl
+python3 evaluation/pubmed_evaluation.py \
+results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleFalse.jsonl \
+compare/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleFalse_comp.jsonl
 
 #140
 #all 0.000000
@@ -170,30 +170,30 @@ python3 pubmed_evaluation.py \
 #nono 0.0
 
 echo "random context sota flan"
-python3 pubmed_evaluation.py \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomTrue_doubleFalse.jsonl \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomTrue_doubleFalse_comp.jsonl
+python3 evaluation/pubmed_evaluation.py \
+ results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+ results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomTrue_doubleFalse.jsonl \
+ compare/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomTrue_doubleFalse_comp.jsonl
 ##
 
 
 
 echo "random context sota gpt"
 
-python3 pubmed_evaluation.py \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleFalse.jsonl \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleFalse_comp.jsonl
+python3 evaluation/pubmed_evaluation.py \
+ results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+ results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleFalse.jsonl \
+ compare/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleFalse_comp.jsonl
 ##
 
 
 
 
 echo "double random context sota llama"
- python3 pubmed_evaluation.py \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse_1.jsonl \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl
+ python3 evaluation/pubmed_evaluation.py \
+ results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse_1.jsonl \
+ results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
+ compare/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl
 
 #140
 #all 0.000000
@@ -209,10 +209,10 @@ echo "double random context sota llama"
 #nono 0.0
 
 echo "double random context sota vicuna"
- python3 pubmed_evaluation.py \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
-  /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl
+ python3 evaluation/pubmed_evaluation.py \
+ results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+  results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
+ compare/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl
 
 #140
 #all 0.000000
@@ -228,20 +228,20 @@ echo "double random context sota vicuna"
 #nono 0.0
 echo "double random context sota flan"
 
- python3 pubmed_evaluation.py \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
-/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl
+ python3 evaluation/pubmed_evaluation.py \
+ results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+results/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
+compare/pubmedqa/pubmedqa_flan-t5-xl_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl
 
 
 
 
 
 echo "double random context sota gpt"
- python3 pubmed_evaluation.py \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
- /Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl
+ python3 evaluation/pubmed_evaluation.py \
+ results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+ results/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
+ compare/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl
 
 
 
@@ -261,10 +261,10 @@ echo "double random context sota gpt"
 
 ## doublerandom context sota
 
-#python pubmed_evaluation.py  \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl \
+#python evaluation/pubmed_evaluation.py  \
+#results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+#results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
+#compare/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl \
 ##500
 #19.0 88.0 87.0
 #all 0.388000
@@ -306,10 +306,10 @@ echo "double random context sota gpt"
 
 ## no context freeform
 
-#python pubmed_evaluation.py  \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
+#python evaluation/pubmed_evaluation.py  \
+#results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+#results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
+#compare/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
 
 #500
 #53.0 268.0 163.0
@@ -347,10 +347,10 @@ echo "double random context sota gpt"
 #nono 0.492
 
 
-#python pubmed_evaluation.py  \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_freeform_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_freeform_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_freeform_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
+#python evaluation/pubmed_evaluation.py  \
+#results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_freeform_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+#results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_freeform_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
+#compare/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_freeform_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
 ##500
 #45.0 221.0 163.0
 #all 0.858000
@@ -395,101 +395,14 @@ echo "double random context sota gpt"
 
 ## doublerandom context freeform
 
-#python pubmed_evaluation.py  \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl \
+#python evaluation/pubmed_evaluation.py  \
+#results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+#results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
+#compare/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_freeform_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl \
 #
 
-#python pubmed_evaluation.py  \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
-#/Users/wenbingbing/PycharmProjects/qasper/science_qa_new/results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl \
-
-
-
-
-
-
-
-# python pubmed_evaluation.py  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/llamav2_0shot_context_exp2_pubmed.jsonl  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/llamav2_0shot_nocontext_exp2_doc_pubmed.jsonl \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/llamav2_0shot_nocontext_exp2_doc_comp_pubmed.jsonl
-
-
-# python pubmed_evaluation.py  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/pubmedllamav2_0shot_context_pubmed.jsonl  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/pubmedllamav2_0shot_nocontext_pubmed.jsonl \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/pubmedllamav2_0shot_nocontext_comp_pubmed.jsonl
-
-
-# python pubmed_evaluation.py  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/pubmedllamav2_0shot_context_pubmed.jsonl  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/llamav2_0shot_randomcontext_pubmed.jsonl \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/llamav2_0shot_randomcontext_comp_pubmed.jsonl
-
-
-
-# python pubmed_evaluation.py  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/vicuna1.5_13b_0shot_context_pubmed.jsonl  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/vicuna1.5_13b_0shot_nocontext_pubmed.jsonl \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/vicuna1.5_13b_0shot_nocontext_comp_pubmed.jsonl
-
-
-# python pubmed_evaluation.py  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/vicuna1.5_13b_0shot_context_pubmed.jsonl  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/vicuna1.5_13b_0shot_randomcontext_pubmed.jsonl \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/vicuna1.5_13b_0shot_randomcontext_comp_pubmed.jsonl
-
-
-# python pubmed_evaluation.py  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/flanxl_0shot_context_pubmed.jsonl  \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/flanxl_0shot_nocontext_pubmed.jsonl \
-# /home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/flanxl_0shot_nocontext_comp_pubmed.jsonl
-
-
-#python pubmed_evaluation.py  \
-#/home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/flanxl_0shot_context_pubmed.jsonl  \
-#/home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/flanxl_0shot_randomcontext_pubmed.jsonl \
-#/home/notebook/data/personal/S9053169/llm_scienceqa/qasper/results/pubmed/flanxl_0shot_randomcontext_comp_pubmed.jsonl
-
-#
-#
-
-#python3 pubmed_evaluation.py  \
-#/Users/wenbingbing/PycharmProjects/qasper/results/pubmed/pubmed_chatgpt_0shot_context_new.jsonl  \
-#/Users/wenbingbing/PycharmProjects/qasper/results/pubmed/chatgpt_0shot_context_prompt1_exp2_pubmed.jsonl \
-#/Users/wenbingbing/PycharmProjects/qasper/results/pubmed/chatgpt_0shot_context_prompt1_exp2_pubmed_comp.jsonl
-#all 0.452000
-#noans_acc0.555556
-#yes_acc0.623188
-#no_acc0.305882
-#noans_yes0.333333
-#noans_no0.611765
-#all but noans 0.439462
-#Accuracy 0.508000
-#Macro-F1 0.454984
-#[[86  6 46]
-# [ 7 26 52]
-# [10  2 15]]
-#context_length 202.272
-#10.0 18.0 27.0
-#all 0.220000
-#noans_acc0.370370
-#yes_acc0.362319
-#no_acc0.247059
-#noans_yes0.130435
-#noans_no0.317647
-#all but noans 0.201794
-#Accuracy 0.547297
-#Macro-F1 0.496496
-#[[50 11 18]
-# [ 5 21 27]
-# [ 5  1 10]]
-#context_length 202.272
-#hashas 0.4594594594594595
-#hasno 0.0945945945945946
-#nohas 0.16891891891891891
-#nono 0.27702702702702703
+#python evaluation/pubmed_evaluation.py  \
+#results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
+#results/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
+#compare/pubmedqa/pubmedqa_vicuna-13b-v1.5_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl \
 
