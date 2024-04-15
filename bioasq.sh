@@ -1,4 +1,100 @@
 export CUDA_VISIBLE_DEVICES=0
+
+
+####flan
+python run_eval.py \
+    --dataset bioasq \
+    --dataset_dir  ./data/bioasq/ \
+    --prompt_key sota \
+    --save_dir  ./results \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl \
+    --eval_batch_size 8 \
+    --flan_model \
+
+
+
+python run_eval.py \
+    --dataset bioasq \
+    --dataset_dir  ./data/bioasq/ \
+    --prompt_key sota \
+    --save_dir  ./results \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl \
+    --use_chat_format \
+    --eval_batch_size 8 \
+    --no_context \
+    --flan_model \
+
+python run_eval.py \
+    --dataset bioasq \
+    --dataset_dir  ./data/bioasq/ \
+    --prompt_key sota \
+    --save_dir  ./results \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl \
+    --eval_batch_size 8 \
+    --random \
+    --flan_model \
+
+python run_eval.py \
+    --dataset bioasq \
+    --dataset_dir  ./data/bioasq/ \
+    --prompt_key sota \
+    --save_dir  ./results \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl  \
+    --eval_batch_size 8 \
+    --random \
+    --double \
+    --flan_model \
+
+
+python run_eval.py \
+    --dataset bioasq \
+    --dataset_dir  ./data/bioasq/ \
+    --prompt_key freeform \
+    --save_dir  ./results \
+    --model_name_or_path google/flan-t5-xl  \
+    --tokenizer_name_or_path google/flan-t5-xl \
+    --eval_batch_size 8 \
+    --flan_model \
+
+python run_eval.py \
+    --dataset bioasq \
+    --dataset_dir  ./data/bioasq/ \
+    --prompt_key freeform \
+    --save_dir  ./results \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl \
+    --eval_batch_size 8 \
+    --no_context \
+    --flan_model \
+
+python run_eval.py \
+    --dataset bioasq \
+    --dataset_dir  ./data/bioasq/ \
+    --prompt_key freeform \
+    --save_dir  ./results \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl  \
+    --eval_batch_size 8 \
+    --random \
+    --flan_model \
+
+python run_eval.py \
+    --dataset bioasq \
+    --dataset_dir  ./data/bioasq/ \
+    --prompt_key freeform \
+    --save_dir  ./results \
+    --model_name_or_path google/flan-t5-xl \
+    --tokenizer_name_or_path google/flan-t5-xl \
+    --eval_batch_size 8 \
+    --random \
+    --double \
+    --flan_model \
+
+#llama
 python run_eval.py \
     --dataset bioasq \
     --dataset_dir  ./data/bioasq/ \
@@ -91,6 +187,7 @@ python run_eval.py \
     --double
 
 
+#vicuna
 python run_eval.py \
     --dataset bioasq \
     --dataset_dir  ./data/bioasq/ \
@@ -182,98 +279,6 @@ python run_eval.py \
     --double
 
 
-####flan
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key sota \
-    --save_dir  ./results \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --eval_batch_size 1 \
-    --flan_model \
-
-
-
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key sota \
-    --save_dir  ./results \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --use_chat_format \
-    --eval_batch_size 1 \
-    --no_context \
-    --flan_model \
-
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key sota \
-    --save_dir  ./results \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --eval_batch_size 1 \
-    --random \
-    --flan_model \
-
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key sota \
-    --save_dir  ./results \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl  \
-    --eval_batch_size 1 \
-    --random \
-    --double \
-    --flan_model \
-
-
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key freeform \
-    --save_dir  ./results \
-    --model_name_or_path google/flan-t5-xl  \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --eval_batch_size 1 \
-    --flan_model \
-
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key freeform \
-    --save_dir  ./results \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --eval_batch_size 1 \
-    --no_context \
-    --flan_model \
-
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key freeform \
-    --save_dir  ./results \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl  \
-    --eval_batch_size 1 \
-    --random \
-    --flan_model \
-
-python run_eval.py \
-    --dataset bioasq \
-    --dataset_dir  ./data/bioasq/ \
-    --prompt_key freeform \
-    --save_dir  ./results \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl \
-    --eval_batch_size 1 \
-    --random \
-    --double \
-    --flan_model \
 
 
 ###chatgpt
