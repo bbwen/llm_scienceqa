@@ -8,7 +8,7 @@ import sys
 context_length = []
 pred_path = sys.argv[1]
 pred_path_no = sys.argv[2]
-ground_truth = open("../data/pubmedqa/pub_test.json", "r")
+ground_truth = open("data/pubmedqa/test.json", "r")
 predictions_jsonl = open(pred_path, "r")
 predictions_no_jsonl = open(pred_path_no,"r")
 comp_file = open(sys.argv[3],"w")
