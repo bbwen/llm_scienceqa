@@ -316,8 +316,8 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    if args.hf_token_var and (args.openai_engine is None):
-        hf_login(token=getenv(args.hf_token_var))
+    # if args.hf_token_var and (args.openai_engine is None):
+    #     hf_login(token=getenv(args.hf_token_var))
     # model_name_or_path and openai_engine cannot be both None or both not None.
     assert (args.model_name_or_path is None) != (args.openai_engine is None), "Either model_name_or_path or openai_engine should be specified."
     main(args)
