@@ -1,6 +1,6 @@
 echo "no context sota llama"
 python evaluation/pubmed_evaluation.py  \
-results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse_2.jsonl \
+results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
 results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextTrue_randomFalse_doubleFalse.jsonl \
 compare/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextTrue_randomFalse_doubleFalse_comp.jsonl \
 #500
@@ -134,7 +134,7 @@ compare/pubmedqa/pubmedqa_gpt-3.5-turbo-0613_0_sota_results_nocontextTrue_random
 
 echo "random context sota llama"
 python3 evaluation/pubmed_evaluation.py  \
-results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse_2.jsonl \
+results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
 results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleFalse.jsonl \
 compare/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleFalse_comp.jsonl \
 ##140
@@ -191,7 +191,7 @@ python3 evaluation/pubmed_evaluation.py \
 
 echo "double random context sota llama"
  python3 evaluation/pubmed_evaluation.py \
- results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse_1.jsonl \
+ results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomFalse_doubleFalse.jsonl \
  results/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleTrue.jsonl \
  compare/pubmedqa/pubmedqa_Llama-2-13b-chat-hf_0_sota_results_nocontextFalse_randomTrue_doubleTrue_comp.jsonl
 
