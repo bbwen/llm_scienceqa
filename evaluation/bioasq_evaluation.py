@@ -155,5 +155,5 @@ if __name__ == "__main__":
     pred_path_after = open(args.predictions_after, "r")
     predicted_answers_and_evidence = {}
     comp_file = open(args.comp_file, "w")
-    ground_truth = open("../data/bioasq/test.json", "r")
+    ground_truth = open("data/bioasq/test.json", "r")
     evaluate_bioasq(ground_truth,pred_path,pred_path_after,comp_file)
