@@ -125,7 +125,7 @@ def run_pubmedqa(data_dir):
             if random_sample != context:
                 break
         context_length.append(len(" ".join(context).split()))
-        sample_valid_dict[question_id] = {'context': context, 'question': question,'answer': answer, 'random_context': random_sample[0] }
+        sample_valid_dict[question_id] = {'context': context, 'question': question,'answer': answer, 'random_context': random_sample }
     return sample_valid_dict
 
 def run_qasper(data_dir):

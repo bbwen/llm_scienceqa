@@ -1,16 +1,16 @@
 export CUDA_VISIBLE_DEVICES=1
 
 #flanxl
-python run_eval.py \
-    --dataset pubmedqa \
-    --dataset_dir ./data/pubmedqa/ \
-    --prompt_key sota \
-    --save_dir  ./results/pubmedqa \
-    --model_name_or_path google/flan-t5-xl \
-    --tokenizer_name_or_path google/flan-t5-xl  \
-    --use_chat_format \
-    --eval_batch_size 8 \
-    --flan_model
+#python run_eval.py \
+#    --dataset pubmedqa \
+#    --dataset_dir ./data/pubmedqa/ \
+#    --prompt_key sota \
+#    --save_dir  ./results/pubmedqa \
+#    --model_name_or_path google/flan-t5-xl \
+#    --tokenizer_name_or_path google/flan-t5-xl  \
+#    --use_chat_format \
+#    --eval_batch_size 8 \
+#    --flan_model
 
 
 

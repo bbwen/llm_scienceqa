@@ -126,8 +126,8 @@ def main(args):
                 context_length_list.append(len(tokenized_context))
                 if len(tokenized_context) >args.max_context_length:
                     truncated_list.append(len(tokenized_context))
-            # if len(tokenized_context) > args.max_context_length:
-            #     example["context"] = tokenizer.decode(tokenized_context[:args.max_context_length])
+            if len(tokenized_context) > args.max_context_length:
+                example["context"] = tokenizer.decode(tokenized_context[:args.max_context_length])
 
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir, exist_ok=True)
