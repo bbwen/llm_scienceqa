@@ -135,7 +135,7 @@ if __name__ == "__main__":
                 {'question_id': str, 'predicted_answer': str, 'predicted_evidence': List[str]}"""
     )
     parser.add_argument(
-        "--predictions_no",
+        "--predictions_after",
         type=str,
         required=True,
         help="""JSON lines file with each line in format:
