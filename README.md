@@ -5,7 +5,7 @@ This is the offical implementation of paper Characterizing LLM Abstention Behavi
 Perturbations.
 
 <p align="center" width="100%">
-      <img src="images/abstention_scienceqa" alt="abstention with context perturbation" style="width: 20%; min-width: 200px; display: block; margin: auto;">
+      <img src="images/abstention_scienceqa.png" alt="abstention with context perturbation" style="width: 20%; min-width: 200px; display: block; margin: auto;">
 </p>
 
 ## Abstract

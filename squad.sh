@@ -150,7 +150,6 @@ python run_eval.py \
 
 python3 run_eval.py \
     --dataset squad2 \
-    --dataset_path "" \
     --prompt_key sota \
     --save_dir  ./results/squad \
     --openai_engine "gpt-3.5-turbo-0613" \
@@ -159,7 +158,6 @@ python3 run_eval.py \
 
 python3 run_eval.py \
     --dataset squad2 \
-    --dataset_path "" \
     --prompt_key sota \
     --save_dir  ./results/squad \
     --openai_engine "gpt-3.5-turbo-0613" \
@@ -168,7 +166,6 @@ python3 run_eval.py \
 
 python3 run_eval.py \
     --dataset squad2 \
-    --dataset_path "" \
     --prompt_key sota \
     --save_dir  ./results/squad  \
     --openai_engine "gpt-3.5-turbo-0613" \
@@ -177,7 +174,6 @@ python3 run_eval.py \
 
 python3 run_eval.py \
     --dataset squad2 \
-    --dataset_path "" \
     --prompt_key sota \
     --save_dir  ./results/squad \
     --openai_engine "gpt-3.5-turbo-0613" \
