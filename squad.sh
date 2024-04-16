@@ -63,39 +63,39 @@ python run_eval.py \
     --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
     --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
     --use_chat_format \
-    --eval_batch_size 4 \
+    --eval_batch_size 8 \
     --random \
     --double
 
-#python run_eval.py \
-#    --dataset squad2 \
-#    --prompt_key sota \
-#    --save_dir  ./results/squad \
-#    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
-#    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
-#    --use_chat_format \
-#    --eval_batch_size 4 \
+python run_eval.py \
+    --dataset squad2 \
+    --prompt_key sota \
+    --save_dir  ./results/squad \
+    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
+    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
+    --use_chat_format \
+    --eval_batch_size 8 \
 
 
-#python run_eval.py \
-#    --dataset squad2 \
-#    --prompt_key sota \
-#    --save_dir  ./results/squad \
-#    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
-#    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf \
-#    --use_chat_format \
-#    --eval_batch_size 4 \
-#    --no_context \
-#
-#python run_eval.py \
-#    --dataset squad2 \
-#    --prompt_key sota \
-#    --save_dir  ./results/squad \
-#    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
-#    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
-#    --use_chat_format \
-#    --eval_batch_size 4 \
-#    --random
+python run_eval.py \
+    --dataset squad2 \
+    --prompt_key sota \
+    --save_dir  ./results/squad \
+    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
+    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf \
+    --use_chat_format \
+    --eval_batch_size 8 \
+    --no_context \
+
+python run_eval.py \
+    --dataset squad2 \
+    --prompt_key sota \
+    --save_dir  ./results/squad \
+    --model_name_or_path meta-llama/Llama-2-13b-chat-hf \
+    --tokenizer_name_or_path meta-llama/Llama-2-13b-chat-hf  \
+    --use_chat_format \
+    --eval_batch_size 8 \
+    --random
 
 
 
@@ -148,41 +148,41 @@ python run_eval.py \
 
 
 
-#python3 run_eval.py \
-#    --dataset squad2 \
-#    --dataset_path "" \
-#    --prompt_key sota \
-#    --save_dir  ./results/squad \
-#    --openai_engine "gpt-3.5-turbo-0613" \
-#    --eval_batch_size 8 \
-#
-#
-#python3 run_eval.py \
-#    --dataset squad2 \
-#    --dataset_path "" \
-#    --prompt_key sota \
-#    --save_dir  ./results/squad \
-#    --openai_engine "gpt-3.5-turbo-0613" \
-#    --eval_batch_size 8 \
-#    --no_context \
-#
-#python3 run_eval.py \
-#    --dataset squad2 \
-#    --dataset_path "" \
-#    --prompt_key sota \
-#    --save_dir  ./results/squad  \
-#    --openai_engine "gpt-3.5-turbo-0613" \
-#    --eval_batch_size 8 \
-#    --random
-#
-#python3 run_eval.py \
-#    --dataset squad2 \
-#    --dataset_path "" \
-#    --prompt_key sota \
-#    --save_dir  ./results/squad \
-#    --openai_engine "gpt-3.5-turbo-0613" \
-#    --eval_batch_size 8 \
-#    --random \
-#    --double
+python3 run_eval.py \
+    --dataset squad2 \
+    --dataset_path "" \
+    --prompt_key sota \
+    --save_dir  ./results/squad \
+    --openai_engine "gpt-3.5-turbo-0613" \
+    --eval_batch_size 8 \
+
+
+python3 run_eval.py \
+    --dataset squad2 \
+    --dataset_path "" \
+    --prompt_key sota \
+    --save_dir  ./results/squad \
+    --openai_engine "gpt-3.5-turbo-0613" \
+    --eval_batch_size 8 \
+    --no_context \
+
+python3 run_eval.py \
+    --dataset squad2 \
+    --dataset_path "" \
+    --prompt_key sota \
+    --save_dir  ./results/squad  \
+    --openai_engine "gpt-3.5-turbo-0613" \
+    --eval_batch_size 8 \
+    --random
+
+python3 run_eval.py \
+    --dataset squad2 \
+    --dataset_path "" \
+    --prompt_key sota \
+    --save_dir  ./results/squad \
+    --openai_engine "gpt-3.5-turbo-0613" \
+    --eval_batch_size 8 \
+    --random \
+    --double
 
 
