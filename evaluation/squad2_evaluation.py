@@ -244,7 +244,7 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    gold_data =json.load(open("../data/squad2/squad_v2_valid.json",'r'))
+    gold_data =json.load(open("./data/squad2/squad_v2_valid.json",'r'))
     gold_answers_and_evidence = get_answers_and_evidence_new(gold_data)
     predicted_answers_and_evidence = {}
     comp_file = open(args.comp_file, "w")
