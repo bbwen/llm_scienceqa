@@ -104,8 +104,8 @@ def extract_answer(predict_answer):
     predict_answer = predict_answer.replace("\\","")
     if "unanswerable" in predict_answer.lower() or predict_answer == "":
         answer = "unanswerable"
-    else:
-        answer = predict_answer.split("reasoning:")[0]
+    # else:
+    #     answer = predict_answer.split("reasoning:")[0]
     # print(answer)
     return answer.lower()
 
@@ -183,11 +183,8 @@ def evaluate(gold, predicted,predicted_after,comp_file):
         elif  answer == "unanswerable" and answer_after == "unanswerable" :
             nono +=1
 
-        for reference in gold[question_id]:
-            if  reference["type"] == "none":
-                type_flag= True
 
-        if not type_flag:
+        if not answer_type == "noANS":
             type_flag_num += 1
             if answer != "unanswerable" and answer_after == "unanswerable" :
                 hasno_type_flag_num +=1
