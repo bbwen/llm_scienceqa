@@ -216,11 +216,7 @@ def evaluate(gold, predicted,predicted_after,comp_file):
         elif  answer == "unanswerable" and answer_after == "unanswerable" :
             nono +=1
 
-        for reference in gold[question_id]:
-            if  reference["type"] == "none":
-                type_flag= True
-                
-        if not type_flag:
+        if not answer_type == "none":
             type_flag_num += 1
             if answer != "unanswerable" and answer_after == "unanswerable" :
                 hasno_type_flag_num +=1
