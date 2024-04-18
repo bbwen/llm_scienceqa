@@ -158,6 +158,8 @@ nono = 0.0
 hasno = 0.0
 nohas = 0.0
 same = 0.0
+type_flag_num = 0.0
+hasno_type_flag_num = 0.0
 for key,value in predictions_no.items():
     if predictions.get(key):
         if predictions[key] == value and value != "maybe":
@@ -170,6 +172,11 @@ for key,value in predictions_no.items():
             nono +=1
         elif  predictions[key] == "maybe" and value != "maybe":
             nohas +=1
+
+        if groundtruthp[key] != "maybe":
+            type_flag_num += 1
+            if predictions[key] != "maybe" and value == "maybe":
+                hasno_type_flag_num +=1
 
         comp_file.write(json.dumps({
         'question_id': key,
@@ -184,5 +191,7 @@ print("hashas",hashas/intersection_all)
 print("hasno", hasno/intersection_all)
 print("nohas", nohas/intersection_all)
 print("nono", nono/intersection_all)
+print("hasno_type_flag_num", hasno_type_flag_num / type_flag_num)
+
 
 

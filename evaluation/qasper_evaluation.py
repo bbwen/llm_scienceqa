@@ -123,6 +123,9 @@ def evaluate(gold, predicted,predicted_after,comp_file):
     has_answer = 0.0
     max_answer_f1s = []
     max_evidence_f1s = []
+    type_flag = False
+    type_flag_num = 0.0
+    hasno_type_flag_num = 0.0
     max_answer_f1s_by_type = {
         "extractive": [],
         "abstractive": [],
@@ -157,6 +160,7 @@ def evaluate(gold, predicted,predicted_after,comp_file):
             continue
         answer = extract_answer(predicted[question_id]["answer"])
         answer_after = extract_answer(predicted_after[question_id]["answer"])
+
 
         answer_f1s_and_types = [
             (token_f1_score(answer, reference["answer"]),
@@ -212,6 +216,15 @@ def evaluate(gold, predicted,predicted_after,comp_file):
         elif  answer == "unanswerable" and answer_after == "unanswerable" :
             nono +=1
 
+        for reference in gold[question_id]:
+            if  reference["type"] == "none":
+                type_flag= True
+                
+        if not type_flag:
+            type_flag_num += 1
+            if answer != "unanswerable" and answer_after == "unanswerable" :
+                hasno_type_flag_num +=1
+
         comp_file.write(json.dumps({
         'question_id': question_id,
         'question': predicted[question_id]["question"],
@@ -239,6 +252,7 @@ def evaluate(gold, predicted,predicted_after,comp_file):
     print("hasno", hasno/len(all))
     print("nohas", nohas/len(all))
     print("nono", nono/len(all))
+    print("hasno_type_flag_num",hasno_type_flag_num/type_flag_num)
 
     has_all = []
     has_all_after = []
