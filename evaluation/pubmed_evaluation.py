@@ -173,7 +173,7 @@ for key,value in predictions_no.items():
         elif  predictions[key] == "maybe" and value != "maybe":
             nohas +=1
 
-        if groundtruthp[key] != "maybe":
+        if groundtruth[key] != "maybe":
             type_flag_num += 1
             if predictions[key] != "maybe" and value == "maybe":
                 hasno_type_flag_num +=1
