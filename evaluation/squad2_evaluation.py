@@ -104,10 +104,12 @@ def extract_answer(predict_answer):
     predict_answer = predict_answer.replace("\\","")
     if "unanswerable" in predict_answer.lower() or predict_answer == "":
         answer = "unanswerable"
+    else:
+        answer = predict_answer.lower()
     # else:
     #     answer = predict_answer.split("reasoning:")[0]
     # print(answer)
-    return answer.lower()
+    return answer
 
 def evaluate(gold, predicted,predicted_after,comp_file):
     hashas = 0.0
