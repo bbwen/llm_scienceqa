@@ -15,6 +15,8 @@ The correct model response in the face of uncertainty is to abstain from answeri
 
 ## Citation
 If you used this repository or our evaluation framework, please cite our work:
+
+```bibtex
 @misc{wen2024characterizing,
       title={Characterizing LLM Abstention Behavior in Science QA with Context Perturbations}, 
       author={Bingbing Wen and Bill Howe and Lucy Lu Wang},
@@ -23,6 +25,8 @@ If you used this repository or our evaluation framework, please cite our work:
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
+```
+
 
 ## Setup
 
